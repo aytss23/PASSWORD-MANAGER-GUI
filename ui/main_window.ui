@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PASSWORD MANAGER - furkanaytass</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="mainTitleLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>441</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {background-color: 'green'; color: 'white'}</string>
+    </property>
+    <property name="text">
+     <string>WELCOME PASSWORD MANAGER</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>80</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="DataIOLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="passwordTitleLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>TITLE:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="passwordTitleLineEdit">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="passwordDataLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>PASSWORD:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="passwordDataLineEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="searchLineLayout">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="searchInputLineEdit">
+       <property name="placeholderText">
+        <string>enter text for searching</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="searchDataPushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>SEARCH</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>1011</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="appendDataPushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>APPEND</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="updateDataPushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>UPDATE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteDataPushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>DELETE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="listAllDataPushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LIST ALL</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="getSelectedRowDataPushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>GET SELECTED ROW</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>650</y>
+      <width>901</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="passwordGeneratorLayout">
+     <item>
+      <widget class="QPushButton" name="generatePushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>GENERATE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="generateResultLineEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="inputLengthLayout">
+     <item>
+      <widget class="QLabel" name="generateLengthLabel">
+       <property name="text">
+        <string>Length:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lengthInputLineEdit">
+       <property name="placeholderText">
+        <string>max. 128</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>690</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="checkboxesLayout">
+     <item>
+      <widget class="QCheckBox" name="numbersCheckBox">
+       <property name="text">
+        <string>Numbers</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="charactersCheckBox">
+       <property name="text">
+        <string>Characters</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="specialCharactersCheckBox">
+       <property name="text">
+        <string>Special Characters</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>1011</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="tableWidgetLayout">
+     <item>
+      <widget class="QTableWidget" name="dataTableWidget"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>40</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="optionsLayout">
+     <item>
+      <widget class="QPushButton" name="setTableEditPushButton">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>TABLE EDIT - OFF</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="refreshTableWidgetPushButton">
+       <property name="text">
+        <string>REFRESH - F5</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="truncateTablePushButton">
+       <property name="text">
+        <string>TRUNCATE </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="setQuickModePushButton">
+       <property name="text">
+        <string>QUICK MODE - OFF</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="logOutPushButton">
+    <property name="geometry">
+     <rect>
+      <x>1194</x>
+      <y>682</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LOG OUT</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="selectedDataTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>260</y>
+      <width>221</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loginDataLabel">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>701</y>
+      <width>431</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
